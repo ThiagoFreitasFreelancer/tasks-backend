@@ -54,11 +54,13 @@
 			<version>1.10.19</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
 		<dependency>
-		        <groupId>org.apache.httpcomponents</groupId>
-		        <artifactId>httpclient</artifactId>
-		        <version>4.3.4</version>
-        	</dependency>
+		    <groupId>commons-httpclient</groupId>
+		    <artifactId>commons-httpclient</artifactId>
+		    <version>3.1-jenkins-3</version>
+		</dependency>
+
         <dependency>
             <groupId>org.thymeleaf</groupId>
             <artifactId>thymeleaf</artifactId>
