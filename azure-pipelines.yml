@@ -32,6 +32,7 @@ steps:
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
+    codeCoverageSourceDirectories: 'controller/TaskControllerTest.java,taskbackend/DataUtilsTest.java'
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean package verify'
     codeCoverageToolOption: JaCoCo
