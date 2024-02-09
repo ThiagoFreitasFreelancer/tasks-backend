@@ -38,7 +38,7 @@ public class TaskControllerTest {
         try{
             controller.save( todo );
         }catch ( ValidationException e ){
-            Assert.assertEquals( "Fil the task description", e.getMessage() );
+            Assert.assertEquals( "Fill the task description", e.getMessage() );
         }
     }
 
