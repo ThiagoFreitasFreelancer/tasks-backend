@@ -10,8 +10,9 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
 import java.time.LocalDate;
+
+//Testado rodar os testes
 
 public class TaskControllerTest {
 
@@ -32,7 +33,7 @@ public class TaskControllerTest {
     public void naoDeveSalvarTarefaSemDescricao() {
 
         Task todo = new Task();
-        //todo.setTask( "Descricao" );
+        todo.setTask( "Descricao" );
         todo.setDueDate( LocalDate.now() );
         try{
             controller.save( todo );
