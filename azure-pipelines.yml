@@ -4,7 +4,21 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- master
+  branches:
+    include:
+      - master
+  paths:
+    exclude:
+      - README.md 
+
+pr:  
+  autoCancel: true
+  branches:
+    include:
+      - '*'
+  paths:
+    exclude:
+      - README.md
 
 pool:
   vmImage: ubuntu-latest
