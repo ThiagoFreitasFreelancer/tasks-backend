@@ -33,12 +33,12 @@ public class TaskControllerTest {
     public void naoDeveSalvarTarefaSemDescricao() {
 
         Task todo = new Task();
-        todo.setTask( "Descricao" );
+        //todo.setTask( "Descricao" );
         todo.setDueDate( LocalDate.now() );
         try{
             controller.save( todo );
         }catch ( ValidationException e ){
-            Assert.assertEquals( "Fill the task description", e.getMessage() );
+            Assert.assertEquals( "Fil the task description", e.getMessage() );
         }
     }
 
