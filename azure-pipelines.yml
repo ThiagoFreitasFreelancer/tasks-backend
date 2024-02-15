@@ -15,7 +15,7 @@ pr:
   autoCancel: true
   branches:
     include:
-      - '*'
+      - master
   paths:
     exclude:
       - README.md
@@ -34,8 +34,6 @@ steps:
     publishJUnitResults: true
     codeCoverageSourceDirectories: 'controller/TaskControllerTest.java,taskbackend/DataUtilsTest.java'
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean package verify'
-    codeCoverageToolOption: JaCoCo
 
 - task: PublishCodeCoverageResults@1
   inputs:
